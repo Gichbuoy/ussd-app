@@ -1,5 +1,5 @@
 <?php
-// Read the variables sent via POST from our API gateway
+// Read the variables sent via POST from the API gateway
 $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
