@@ -1,3 +1,5 @@
+<?php
+// Read the variables sent via POST from the API gateway
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +55,7 @@ header('Content-type: text/plain');
 echo $response;
 
 ?>
+
     
     <p>This is regular HTML content after the PHP section.</p>
 </body>
