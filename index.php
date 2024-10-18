@@ -1,4 +1,15 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page with PHP</title>
+</head>
+<body>
+    <h1>Welcome to my PHP-enabled HTML page</h1>
+    
+    <p>The current date and time is:</p>
+    <?php
 // Read the variables sent via POST from our API gateway
 $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
@@ -42,3 +53,11 @@ header('Content-type: text/plain');
 echo $response;
 
 ?>
+    
+    <p>This is regular HTML content after the PHP section.</p>
+</body>
+</html>
+
+
+
+
