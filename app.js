@@ -17,9 +17,9 @@ app.post('/ussd', (req, res) => {
 
   if (text === '') {
     // This is the first request
-    response = `CON Welcome to the Voting System
-    1. Vote for Option 1
-    2. Vote for Option 2
+    response = `Welcome to the Public Participation Voting System
+    1. Vote for Impeachment of President Ruto
+    2. Vote for Impeachment of His Deputy 
     3. View Results`;
   } else if (text === '1' || text === '2') {
     if (votedUsers.has(phoneNumber)) {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USSD Tester</title>
+</head>
+<body>
+    <h1>USSD Tester</h1>
+    <form action="http://localhost:3000/ussd" method="POST">
+        <label for="sessionId">Session ID:</label>
+        <input type="text" id="sessionId" name="sessionId" value="12345"><br><br>
+        
+        <label for="serviceCode">Service Code:</label>
+        <input type="text" id="serviceCode" name="serviceCode" value="*123#"><br><br>
+        
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" value="+254"><br><br>
+        
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text"><br><br>
+        
+        <input type="submit" value="Send USSD Request">
+    </form>
+</body>
+</html>
